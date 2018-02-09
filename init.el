@@ -9,48 +9,20 @@
 (package-initialize)
 
 ;; basic config
-(load "$HOME/.emacs.d/basic-config.el")
+;; (load "$HOME/.emacs.d/basic-config.el")
 
 ;; python mode
-(load "$HOME/.emacs.d/python-config.el")
-(enable-python-mode "python3.6")
+;; (load "$HOME/.emacs.d/python-config.el")
+;; (enable-python-mode "python3.6")
 
 ;; erlang mode
-(load "$HOME/.emacs.d/erlang-config.el")
-(enable-erlang-mode)
-
-;; elpy mode
-;; (elpy-enable)
-;; (setq elpy-rpc-python-command "python3.6")
-
-;; python anaconda-mode
-;; (add-hook 'python-mode-hook 'anaconda-mode)
-;; (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
-;; (eval-after-load "company"
-;;   '(add-to-list 'company-backends '(company-anaconda :with company-capf)))
-
-;; setting python shell
-;; use python3 as default executive shell
-;; (setq python-shell-interpreter (substring (shell-command-to-string "which python3.6") 0 -1))
-
-;; use python2 as default executive shell
-;; (setq python-shell-interpreter (substring (shell-command-to-string "which python2") 0 -1))
-
-;; user setting
+;; (load "$HOME/.emacs.d/erlang-config.el")
+;; (enable-erlang-mode)
 
 ;; AucTex
 ;; (setq TeX-auto-save t)
 ;; (setq TeX-parse-self t)
 
-
-;; CMake
-(setq auto-mode-alist
-	  (append
-	   '(("CMakeLists\\.txt\\'" . cmake-mode))
-	   '(("\\.cmake\\'" . cmake-mode))
-	   auto-mode-alist))
-
-(autoload 'cmake-mode "/usr/share/emacs/site-lisp/cmake-mode.el" t)
 
 ;; Perl
 (defalias 'perl-mode 'cperl-mode)
