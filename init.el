@@ -9,11 +9,11 @@
 (package-initialize)
 
 ;; basic config
-;; (load "$HOME/.emacs.d/basic-config.el")
+;; (load "$HOME/.emacs.d/lang/pref.el")
 
 ;; python mode
-;; (load "$HOME/.emacs.d/python-config.el")
-;; (enable-python-mode "python3.6")
+;; (load "$HOME/.emacs.d/lang/python.el")
+;; (python-config "/usr/local/bin/python3.6")
 
 ;; erlang mode
 ;; (load "$HOME/.emacs.d/erlang-config.el")
