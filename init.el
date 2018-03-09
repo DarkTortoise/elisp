@@ -9,40 +9,21 @@
 (package-initialize)
 
 ;; basic config
-;; (load "$HOME/.emacs.d/lang/pref.el")
+;; (load "./elisp/lang/pref.el")
+
+;; global company mode
+;; (load "./elisp/library/company-mode.el")
+;; (toggle-company-mode t)
 
 ;; python mode
-;; (load "$HOME/.emacs.d/lang/python.el")
+;; (load "./elisp/lang/python.el")
 ;; (python-config "/usr/local/bin/python3.6")
-
-;; erlang mode
-;; (load "$HOME/.emacs.d/erlang-config.el")
-;; (enable-erlang-mode)
-
-;; AucTex
-;; (setq TeX-auto-save t)
-;; (setq TeX-parse-self t)
-
-
-;; Perl
-(defalias 'perl-mode 'cperl-mode)
-
-;; load company mode
-(add-hook 'after-init-hook 'global-company-mode)
-
-;; cc mode style
-(setq c-default-style "k&r")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(company-backends
-   (quote
-    (company-bbdb company-nxml company-css company-eclim company-semantic company-clang company-xcode company-cmake company-capf company-files
-		  (company-dabbrev-code company-gtags company-etags company-keywords)
-		  company-oddmuse company-dabbrev)))
  '(package-selected-packages (quote (elpy company)))
  '(safe-local-variable-values
    (quote
