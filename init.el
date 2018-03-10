@@ -9,14 +9,18 @@
 (package-initialize)
 
 ;; basic config
-;; (load "./elisp/lang/pref.el")
+;; (load "$HOME/.emacs.d/elisp/lang/pref.el")
+
+;; global flycheck mode
+;; (load "$HOME/.emacs.d/elisp/library/flucheck.el")
+;; (toggle-flycheck-mode t)
 
 ;; global company mode
-;; (load "./elisp/library/company-mode.el")
+;; (load "$HOME/.emacs.d/elisp/library/company-mode.el")
 ;; (toggle-company-mode t)
 
 ;; python mode
-;; (load "./elisp/lang/python.el")
+;; (load "$HOME/.emacs.d/elisp/lang/python.el")
 ;; (python-config "/usr/local/bin/python3.6")
 
 (custom-set-variables
