@@ -16,10 +16,11 @@
 
     (use-package clojure-mode
       :ensure t
-      )
+      :config (progn
+		(add-hook 'cider-repl-mode-hook #'company-mode)
+		(add-hook 'cider-mode-hook #'company-mode)))
 
     (use-package cider
-      :ensure t)
-    )
+      :ensure t))
 
   )
