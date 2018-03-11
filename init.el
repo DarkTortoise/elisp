@@ -12,7 +12,7 @@
 ;; (load "$HOME/.emacs.d/elisp/lang/pref.el")
 
 ;; global flycheck mode
-;; (load "$HOME/.emacs.d/elisp/library/flucheck.el")
+;; (load "$HOME/.emacs.d/elisp/library/flycheck.el")
 ;; (toggle-flycheck-mode t)
 
 ;; global company mode
