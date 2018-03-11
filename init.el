@@ -3,11 +3,6 @@
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
 
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-(package-initialize)
-
 ;; basic config
 ;; (load "$HOME/.emacs.d/elisp/lang/pref.el")
 
