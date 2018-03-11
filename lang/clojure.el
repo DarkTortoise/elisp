@@ -10,8 +10,15 @@
   (progn
     (use-package smartparens
       :config
-      (require 'smartparens-config)
-      (add-hook 'clojure-mode-hook #'smartparens-strict-mode))
+      (require 'smartparens-config))
+
+    (use-package clojure-mode
+      :ensure t
+      :config (progn
+		(add-hook 'clojure-mode-hook #'smartparens-strict-mode)))
+
+    (use-package cider
+      :ensure t)
     )
 
   )
