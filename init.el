@@ -19,6 +19,10 @@
 ;; (load "$HOME/.emacs.d/elisp/library/company-mode.el")
 ;; (toggle-company-mode t)
 
+;; clojure mode
+;; (load "$HOME/.emacs.d/elisp/lang/clojure.el")
+;; (enable-clojure)
+
 ;; python mode
 ;; (load "$HOME/.emacs.d/elisp/lang/python.el")
 ;; (python-config "/usr/local/bin/python3.6")
