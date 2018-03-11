@@ -13,11 +13,11 @@
 
 ;; global flycheck mode
 ;; (load "$HOME/.emacs.d/elisp/library/flycheck.el")
-;; (toggle-flycheck-mode t)
+;; (enable-flycheck-mode t)
 
 ;; global company mode
 ;; (load "$HOME/.emacs.d/elisp/library/company-mode.el")
-;; (toggle-company-mode t)
+;; (enable-company-mode t)
 
 ;; clojure mode
 ;; (load "$HOME/.emacs.d/elisp/lang/clojure.el")
