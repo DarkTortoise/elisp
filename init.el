@@ -21,7 +21,7 @@
 
 ;; clojure mode
 ;; (load "$HOME/.emacs.d/elisp/lang/clojure.el")
-;; (enable-clojure)
+;; (enable-clojure-mode)
 
 ;; python mode
 ;; (load "$HOME/.emacs.d/elisp/lang/python.el")

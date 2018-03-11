@@ -8,7 +8,10 @@
       (package-install p)))
 
   (progn
-    (require 'smartparens-config)
-    (add-hook 'clojure-mode-hook #'smartparens-mode))
+    (use-package smartparens
+      :config
+      (require 'smartparens-config)
+      (add-hook 'clojure-mode-hook #'smartparens-mode))
+    )
 
   )
