@@ -11,7 +11,7 @@
     (use-package smartparens
       :config
       (require 'smartparens-config)
-      (add-hook 'clojure-mode-hook #'smartparens-mode))
+      (add-hook 'clojure-mode-hook #'smartparens-strict-mode))
     )
 
   )
