@@ -1,12 +1,7 @@
-(defun python-config (python-path)
-  (use-package elpy
-    :init (progn
-	    (enable-elpy)
-	    (setq elpy-rpc-python-command python-path)
-	    (setq python-shell-interpreter python-path))))
+;;; python mode
 
 (defun enable-python-mode ()
-  "Enable python mode"
+  ";;; Code: python mode."
   (defvar packages '(elpy))
 
   (dolist (p packages)
@@ -16,8 +11,8 @@
   (use-package elpy
     :init
     (progn
-      (enable-python)
-      (setq elpy-rpc-python-command "python3")
-      (setq python-shell-interpreter "python3"))
+      (elpy-enable)
+      (setq elpy-rpc-python-command "python3.6")
+      (setq python-shell-interpreter "python3.6"))
     )
   )
