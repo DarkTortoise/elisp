@@ -1,6 +1,5 @@
 (defun enable-company-mode ()
-  (defvar packages '('use-package
-		     'company))
+  (defvar packages '(company))
 
   (dolist (p packages)
     (unless (package-installed-p p)
