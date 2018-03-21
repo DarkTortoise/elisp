@@ -1,16 +1,5 @@
 ;; emacs basic configuration
 
-(require 'package)
-(add-to-list 'package-archives
-             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
-(package-initialize)
-
-(defvar packages '(use-package))
-
-(dolist (p packages)
-  (unless (package-installed-p p)
-    (package-install p)))
-
 ;; enable ibuffer
 (defalias 'list-buffers 'ibuffer)
 
