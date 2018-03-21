@@ -2,40 +2,22 @@
 
 
 (defun check-packages ()
-  (defvar packages '(anaconda-mode
-		     company-anaconda))
+  (defvar packages '(elpy
+		     ))
 
   (dolist (p packages)
     (unless (package-installed-p p)
       (package-install p)))
   )
 
-(defun anaconda-mode-conf ()
-  (use-package anaconda-mode
-    :ensure t
-    )
-  )
-
-(defun company-anaconda-conf ()
-  (use-package company-anaconda
-    :ensure t
-    :config
-    (progn
-      (message "[python] company-anaconda")
-      (eval-after-load "company"
-	'(add-to-list 'company-backends '(company-anaconda :with company-capf)))      
-      )
-    )
+(defun elpy-conf ()
+  (elpy-enable)
   )
 
 (defun enable-python-mode ()
   ";;; Code: define packages needed."
   (check-packages)
-  (anaconda-mode-conf)
-  (company-anaconda-conf)
-  (add-hook 'python-mode-hook 'anaconda-mode)
-  (add-hook 'python-mode-hook 'anaconda-eldoc-mode)
-  
+  (elpy-conf)
   )
 
 ;;; python.el ends here
