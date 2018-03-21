@@ -18,7 +18,14 @@
 
 (defun company-anaconda-conf ()
   (use-package company-anaconda
-    :ensure t))
+    :ensure t
+    :config
+    (progn
+      (eval-after-load "company"
+	'(add-to-list 'company-backends 'company-anaconda))
+      )
+    )
+  )
 
 (defun enable-python-mode ()
   ";;; Code: define packages needed."
