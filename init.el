@@ -25,7 +25,7 @@
 
 ;; python mode
 ;; (load "$HOME/.emacs.d/elisp/lang/python.el")
-;; (python-config "/usr/local/bin/python3.6")
+;; (enable-python-mode "/usr/local/bin/python3.6")
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
