@@ -1,9 +1,10 @@
 (defun enable-clojure-mode ()
-  (defvar packages '(smartparens
+  (defvar packages '(use-package
+		     smartparens
 		     aggressive-indent-mode
 		     clojure-mode
 		     cider
-		     use-package))
+		     ))
   
   (dolist (p packages)
     (unless (package-installed-p p)
