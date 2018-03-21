@@ -24,10 +24,20 @@
     )
   )
 
+(defun cider-conf ()
+  (use-package cider
+    :ensure cider
+    :config
+    (progn
+      (setq cider-font-lock-dynamically '(macro core function var)))
+    )
+  )
+
 (defun enable-clojure-mode ()
   (check-packages)
+  (smartparens-conf)
+  (cider-conf)
   (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
   (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
   (add-hook 'clojure-mode-hook #'subword-mode)
-  (setq cider-font-lock-dynamically '(macro core function var))
   )
