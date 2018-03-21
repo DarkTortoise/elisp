@@ -1,5 +1,5 @@
 (defun enable-clojure-mode ()
-  (defvar packages '(use-package
+  (defvar packages '(
 		     smartparens
 		     aggressive-indent-mode
 		     clojure-mode
