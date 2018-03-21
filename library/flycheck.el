@@ -1,6 +1,6 @@
 (defun enable-flycheck-mode ()
-  (defvar packages '(use-package
-		     flycheck))
+  (defvar packages '('use-package
+		     'flycheck))
 
   (dolist (p packages)
     (unless (package-installed-p p)
