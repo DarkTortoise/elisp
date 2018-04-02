@@ -29,7 +29,10 @@
     :ensure cider
     :config
     (progn
-      (setq cider-font-lock-dynamically '(macro core function var)))
+      (setq cider-font-lock-dynamically '(macro core function var))
+      (add-hook 'cider-repl-mode-hook #'cider-company-enable-fuzzy-completion)
+      (add-hook 'cider-mode-hook #'cider-company-enable-fuzzy-completion)
+      )
     )
   )
 
