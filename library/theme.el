@@ -4,9 +4,10 @@
     (menu-bar-mode nil)))
 
 (defun enable-base16 ()
-  :ensure t
-  :config
-  (load-theme 'base16-atelier-sulphurpool))
+  (use-package 'base16-theme
+    :ensure t
+    :config
+    (load-theme 'base16-atelier-sulphurpool)))
 
 (defun enable-theme ()
   (toggle-menu-bar nil)
