@@ -2,7 +2,7 @@
   (if turn-on
       (progn
 	(tool-bar-mode -1)
-	(load-theme 'base16-atelier-sulphurpool t)
+	(load-theme 'base16-atelier-sulphurpool)
 	(scroll-bar-mode -1))
     (progn
       (tool-bar-mode 1)
