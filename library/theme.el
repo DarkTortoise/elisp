@@ -5,6 +5,6 @@
     (load-theme 'base16-atelier-sulphurpool t)))
 
 (defun enable-theme ()
-  (menu-bar-mode nil)
+  (menu-bar-mode -1)
   (enable-base16)
   (scroll-bar-mode -1))
