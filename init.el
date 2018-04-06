@@ -8,6 +8,9 @@
              '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 (package-initialize)
 
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
 ;; basic config
 ;; (load "$HOME/.emacs.d/elisp/lang/pref.el")
 
