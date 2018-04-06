@@ -2,7 +2,7 @@
   (use-package 'base16-theme
     :ensure t
     :config
-    (load-theme 'base16-atelier-sulphurpool)))
+    (load-theme 'base16-atelier-sulphurpool t)))
 
 (defun enable-theme ()
   (menu-bar-mode nil)
